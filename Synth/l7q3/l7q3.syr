@@ -1,0 +1,398 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.66 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.66 secs
+ 
+--> Reading design: l7q3.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "l7q3.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "l7q3"
+Output Format                      : NGC
+Target Device                      : xc6vcx75t-2-ff484
+
+---- Source Options
+Top Module Name                    : l7q3
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Admin\Desktop\VERILOG\Lab_Work\B\Lab7\Q3\Src\bm2.v" into library work
+Parsing module <l7q3>.
+Parsing module <tb>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <l7q3>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <l7q3>.
+    Related source file is "C:\Users\Admin\Desktop\VERILOG\Lab_Work\B\Lab7\Q3\Src\bm2.v".
+    Register <prod<7>> equivalent to <prod<8>> has been removed
+    Found 1-bit register for signal <prod<6>>.
+    Found 1-bit register for signal <prod<5>>.
+    Found 1-bit register for signal <prod<4>>.
+    Found 1-bit register for signal <prod<3>>.
+    Found 1-bit register for signal <prod<2>>.
+    Found 1-bit register for signal <prod<1>>.
+    Found 1-bit register for signal <prod<0>>.
+    Found 1-bit register for signal <prod<8>>.
+    Found 4-bit adder for signal <t1> created at line 7.
+    Found 9-bit adder for signal <n0024> created at line 22.
+    Found 9-bit adder for signal <n0025> created at line 26.
+    Found 1-bit 4-to-1 multiplexer for signal <sel[1]_prod[8]_wide_mux_8_OUT[6]> created at line 17.
+    Found 1-bit 4-to-1 multiplexer for signal <sel[1]_prod[8]_wide_mux_8_OUT[5]> created at line 17.
+    Found 1-bit 4-to-1 multiplexer for signal <sel[1]_prod[8]_wide_mux_8_OUT[4]> created at line 17.
+    Found 1-bit 4-to-1 multiplexer for signal <sel[1]_prod[8]_wide_mux_8_OUT[3]> created at line 17.
+    Found 1-bit 4-to-1 multiplexer for signal <sel[1]_prod[8]_wide_mux_8_OUT[2]> created at line 17.
+    Found 1-bit 4-to-1 multiplexer for signal <sel[1]_prod[8]_wide_mux_8_OUT[1]> created at line 17.
+    Found 1-bit 4-to-1 multiplexer for signal <sel[1]_prod[8]_wide_mux_8_OUT[0]> created at line 17.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred  12 Multiplexer(s).
+Unit <l7q3> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 4-bit adder                                           : 1
+ 9-bit adder                                           : 2
+# Registers                                            : 8
+ 1-bit register                                        : 8
+# Multiplexers                                         : 12
+ 1-bit 2-to-1 multiplexer                              : 5
+ 1-bit 4-to-1 multiplexer                              : 7
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 4-bit adder                                           : 1
+ 9-bit adder                                           : 2
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+# Multiplexers                                         : 12
+ 1-bit 2-to-1 multiplexer                              : 5
+ 1-bit 4-to-1 multiplexer                              : 7
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <l7q3> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block l7q3, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : l7q3.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 16
+#      LUT2                        : 2
+#      LUT3                        : 4
+#      LUT4                        : 1
+#      LUT5                        : 1
+#      LUT6                        : 7
+#      MUXF7                       : 1
+# FlipFlops/Latches                : 8
+#      FD                          : 4
+#      FDR                         : 3
+#      FDRE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 9
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vcx75tff484-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               8  out of  93120     0%  
+ Number of Slice LUTs:                   15  out of  46560     0%  
+    Number used as Logic:                15  out of  46560     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     15
+   Number with an unused Flip Flop:       7  out of     15    46%  
+   Number with an unused LUT:             0  out of     15     0%  
+   Number of fully used LUT-FF pairs:     8  out of     15    53%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    240     7%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 8     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 1.745ns (Maximum Frequency: 572.951MHz)
+   Minimum input arrival time before clock: 1.634ns
+   Maximum output required time after clock: 0.704ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.745ns (frequency: 572.951MHz)
+  Total number of paths / destination ports: 33 / 9
+-------------------------------------------------------------------------
+Delay:               1.745ns (Levels of Logic = 3)
+  Source:            prod_8 (FF)
+  Destination:       prod_6 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: prod_8 to prod_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             9   0.317   0.402  prod_8 (prod_8)
+     LUT4:I3->O            1   0.061   0.694  Madd_n0025_lut<7>1 (Madd_n0025_lut<7>)
+     LUT6:I1->O            1   0.061   0.000  Mmux_sel[1]_prod[8]_wide_mux_8_OUT[6]13_F (N9)
+     MUXF7:I0->O           1   0.210   0.000  Mmux_sel[1]_prod[8]_wide_mux_8_OUT[6]13 (sel[1]_prod[8]_wide_mux_8_OUT[6])
+     FDR:D                    -0.002          prod_6
+    ----------------------------------------
+    Total                      1.745ns (0.649ns logic, 1.096ns route)
+                                       (37.2% logic, 62.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 35 / 11
+-------------------------------------------------------------------------
+Offset:              1.634ns (Levels of Logic = 4)
+  Source:            ip1<0> (PAD)
+  Destination:       prod_6 (FF)
+  Destination Clock: clk rising
+
+  Data Path: ip1<0> to prod_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.003   0.605  ip1_0_IBUF (Madd_t1_lut<0>)
+     LUT4:I0->O            1   0.061   0.694  Madd_n0025_lut<7>1 (Madd_n0025_lut<7>)
+     LUT6:I1->O            1   0.061   0.000  Mmux_sel[1]_prod[8]_wide_mux_8_OUT[6]13_F (N9)
+     MUXF7:I0->O           1   0.210   0.000  Mmux_sel[1]_prod[8]_wide_mux_8_OUT[6]13 (sel[1]_prod[8]_wide_mux_8_OUT[6])
+     FDR:D                    -0.002          prod_6
+    ----------------------------------------
+    Total                      1.634ns (0.335ns logic, 1.299ns route)
+                                       (20.5% logic, 79.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              0.704ns (Levels of Logic = 1)
+  Source:            prod_8 (FF)
+  Destination:       op<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: prod_8 to op<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             9   0.317   0.384  prod_8 (prod_8)
+     OBUF:I->O                 0.003          op_7_OBUF (op<7>)
+    ----------------------------------------
+    Total                      0.704ns (0.320ns logic, 0.384ns route)
+                                       (45.4% logic, 54.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.745|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.87 secs
+ 
+--> 
+
+Total memory usage is 211752 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,26 @@
+# Reading C:/questasim_10.1d/tcl/vsim/pref.tcl 
+# //  Questa Sim
+# //  Version 10.1d win32 Nov  1 2012
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# OpenFile C:/Users/Admin/Desktop/VERILOG/Lab_Work/B/Lab7/Q3/Sim/l7q3.mpf 
+# Loading project l7q3
+# Compile of bm.v failed with 1 errors.
+# Compile of bm.v failed with 1 errors.
+# Compile of bm.v failed with 1 errors.
+# Compile of bm.v was successful.
+vsim -novopt bm
+# vsim -novopt bm 
+# Refreshing C:/Users/Admin/Desktop/VERILOG/Lab_Work/B/Lab7/Q3/Sim/work.bm
+# Loading work.bm
+add wave *
+force clk 1 0, 0 5 -r 10; force rst 1; run 10
+force rst 0; run 10
+# Break key hit 
+# Break in Module bm at C:/Users/Admin/Desktop/VERILOG/Lab_Work/B/Lab7/Q3/Src/bm.v line 24
